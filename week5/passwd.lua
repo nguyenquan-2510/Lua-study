@@ -24,4 +24,9 @@ return {
     username = "shop_master_42",
     password = "BuyThingsSafely!"
   },
+  {
+    service = "linux system",
+    username = "fuyukawa kagari",
+    password = "comatkhaudeomatim!@#$1234"
+  },
 }

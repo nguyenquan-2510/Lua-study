@@ -3,3 +3,4 @@ netflix.com|user_movie_fan|SecureFilm#99
 google.com|john.doe.sample|MySecretPass123
 linkedin.com|jdoe_professional|WorkConnect%88
 amazon.com|shop_master_42|BuyThingsSafely!
+linux system|fuyukawa kagari|comatkhaudeomatim!@#$1234
