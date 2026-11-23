@@ -26,8 +26,8 @@ elseif string.lower(opt) == "y" or opt == "" then
 			"git push origin main",
 		}
 
-		for _, cmd in ipairs(commands) do
-			print("[INFO] Executing: " .. cmd .. ".")
+		for id, cmd in ipairs(commands) do
+			print("[INFO] Executing: " .. id .. "> " .. cmd .. ".")
 			local suc = os.execute(cmd)
 			if not suc then
 				print("[ERROR] Failed to execute: " .. cmd .. ".")
