@@ -27,14 +27,14 @@ elseif string.lower(opt) == "y" or opt == "" then
 		}
 
 		for id, cmd in ipairs(commands) do
-			print("[INFO] Executing: " .. id .. "> " .. cmd .. ".")
+			print("[INFO] Executing: " .. id .. "> " .. cmd)
 			local suc = os.execute(cmd)
 			if not suc then
 				print("[ERROR] Failed to execute: " .. cmd .. ".")
 				print("[ERROR] End the script early.")
 				os.exit(1)
 			end
-			print("[INFO] Done: " .. cmd .. ".\n******\n")
+			print("[INFO] Done: " .. cmd .. "\n******\n")
 		end
 
 		print("[INFO] OK!")
