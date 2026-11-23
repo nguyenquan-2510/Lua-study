@@ -34,7 +34,7 @@ elseif string.lower(opt) == "y" or opt == "" then
 				print("[ERROR] End the script early.")
 				os.exit(1)
 			end
-			print("[INFO] Done: " .. cmd .. ".\n******")
+			print("[INFO] Done: " .. cmd .. ".\n******\n")
 		end
 
 		print("[INFO] OK!")
