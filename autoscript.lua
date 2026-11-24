@@ -19,7 +19,7 @@ if string.lower(opt) == "n" then
 elseif string.lower(opt) == "y" or opt == "" then
 	do
 		local commands = {
-			"git statuk",
+			"git status",
 			"git add .",
 			"git status",
 			'git commit -m "' .. msg .. '"',
@@ -29,7 +29,7 @@ elseif string.lower(opt) == "y" or opt == "" then
 		for id, cmd in ipairs(commands) do
 			print("\27[32;1m[INFO] Executing: " .. id .. "> " .. cmd .. "\27[0m")
 			local suc = os.execute(cmd)
-			if not suc then
+			if suc ~= 0 then
 				print("\27[31;1m[ERROR] Failed to execute: " .. cmd .. ".\27[0m")
 				print("\27[31;1m[ERROR] End the script early.\27[0m")
 				os.exit(1)
